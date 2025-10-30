@@ -686,3 +686,19 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
     padding-bottom: 0px !important; /* elimina colchón extra debajo del hero */
   }
 }
+
+/* === Ajuste final – Espacio entre foto y texto en móvil === */
+@media (max-width: 900px) {
+  .hero {
+    padding-top: 92px !important;   /* mantiene margen superior justo */
+    padding-bottom: 0 !important;   /* elimina espacio debajo de la imagen */
+  }
+
+  .hero-image img {
+    margin-bottom: -10px !important; /* sube la imagen un poco hacia el texto */
+  }
+
+  .hero-text {
+    margin-top: -8px !important;    /* acerca aún más el texto al borde inferior de la imagen */
+  }
+}
