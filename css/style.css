@@ -27,10 +27,12 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(245, 245, 245, 0.85); /* gris muy claro con 85% de opacidad */
-  backdrop-filter: blur(8px); /* mantiene el efecto vidrio */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(220,220,220,0.85) 50%, rgba(240,240,240,0.9) 100%);
+  backdrop-filter: blur(10px) brightness(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
+
 .navbar .container { height: 90px; display: flex; align-items: center; justify-content: space-between; }
 .logo img { height: 105px; width: auto; }
 
@@ -208,7 +210,7 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
 }
 
 .hero-text h1 {
-  text-align: left;
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -585,5 +587,50 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
 
   .about-subtext {
     padding: 10px 0;
+  }
+}
+
+/* === OPTIMIZACIONES MOBILE (vista celular) === */
+@media (max-width: 900px) {
+  /* 1️⃣ Menú desplegable más grande y cómodo */
+  .nav-links ul {
+    flex-direction: column;
+    gap: 18px;               /* más espacio entre ítems */
+    padding: 24px;           /* agranda el área interna */
+  }
+  .nav-links a {
+    font-size: 18px;         /* texto más legible */
+    padding: 12px 0;
+  }
+  .nav-links {
+    border-radius: 12px;
+    width: 80vw;             /* ancho más cómodo en pantallas pequeñas */
+    right: 10%;
+  }
+
+  /* 2️⃣ Reducir separación entre texto e imagen del inicio */
+  .hero {
+    padding-top: 70px;       /* antes era 120px */
+  }
+  .hero-text {
+    margin-bottom: 10px;     /* acerca el texto a la imagen */
+  }
+
+  /* 3️⃣ Footer más limpio y legible */
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;               /* separa texto y redes */
+    text-align: center;
+    padding: 20px 0;
+  }
+  .footer p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .socials a {
+    margin: 0 12px;
+    font-size: 22px;
   }
 }
