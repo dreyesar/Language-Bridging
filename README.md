@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/23126830/README.md)
 # 🌐 Language Bridging
 
 **Language Bridging** es el sitio web institucional de **Magdalena Dobrocsi**, especialista en redacción y coach de idiomas en inglés y español.  
@@ -16,7 +15,7 @@ Language Bridging ofrece servicios de:
 - 🧑‍💼 **Capacitación en inglés** para el ámbito laboral y profesional.  
 - 🌍 **Traducción inglés / español – español / inglés**.
 
-Cada sección del sitio está pensada para reflejar el estilo profesional y humano de Magdalena, con una navegación intuitiva y una estética minimalista inspirada en tonos neutros y dorado.
+Cada sección del sitio está pensada para reflejar el estilo profesional y humano de Magdalena, con una navegación intuitiva y una estética minimalista inspirada en tonos neutros y dorado estilo *National Geographic*.
 
 ---
 
