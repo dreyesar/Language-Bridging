@@ -634,3 +634,37 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
     font-size: 22px;
   }
 }
+/* === FIX MOBILE – Hero y espaciados (<=900px) === */
+@media (max-width: 900px) {
+  /* 1) Altura y respiración del header + hero */
+  .navbar .container { height: 84px; }     /* header un pelín más alto y estable */
+  .hero{ padding-top: 96px; padding-bottom: 8px; } /* baja un poco el contenido y reduce aire inferior */
+  .hero-text{ margin-bottom: 6px; text-align: center; } /* texto más cerca de la imagen */
+
+  /* 2) Foto del hero: quita “colchón” inferior y suaviza la sombra */
+  .hero-image,
+  .hero .image,
+  .hero .media,
+  .hero .photo { margin-top: 6px; margin-bottom: 10px; } /* cazamos cualquier wrapper posible */
+  .hero-image img,
+  .hero .image img,
+  .hero .media img,
+  .hero .photo img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 12px 22px rgba(0,0,0,0.08); /* sombra más corta para que no “empuje” */
+  }
+
+  /* 3) Reduce el espacio antes de “Servicios” y en general en secciones */
+  .section{ padding-top: 40px; padding-bottom: 40px; }
+
+  /* 4) WhatsApp un poquito más bajo para no tapar el título */
+  .whatsapp-float{ bottom: 18px; right: 18px; }
+
+  /* 5) Footer: separa texto y redes sin dejarlo “pegado” ni muy abierto */
+  .footer .container{
+    display:flex; flex-direction:column; align-items:center;
+    gap:12px; text-align:center; padding:18px 0;
+  }
+  .footer p{ font-size:14px; line-height:1.6; }
+}
