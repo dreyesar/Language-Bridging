@@ -679,7 +679,7 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   }
 
   .hero-text {
-    margin-top: 6px !important;   /* acerca el texto al borde de la foto */
+    margin-top: 0px !important;   /* acerca el texto al borde de la foto */
   }
 
   .hero {
