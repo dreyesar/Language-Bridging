@@ -668,3 +668,21 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   }
   .footer p{ font-size:14px; line-height:1.6; }
 }
+
+/* === Ajuste fino del espacio entre la foto y el título en móvil === */
+@media (max-width: 900px) {
+  .hero-image img,
+  .hero .image img,
+  .hero .media img,
+  .hero .photo img {
+    margin-bottom: 0px !important; /* elimina espacio inferior de la foto */
+  }
+
+  .hero-text {
+    margin-top: 6px !important;   /* acerca el texto al borde de la foto */
+  }
+
+  .hero {
+    padding-bottom: 0px !important; /* elimina colchón extra debajo del hero */
+  }
+}
