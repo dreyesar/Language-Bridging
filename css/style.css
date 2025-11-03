@@ -702,3 +702,22 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
     margin-top: -8px !important;    /* acerca aún más el texto al borde inferior de la imagen */
   }
 }
+
+/* === Ajuste fino: espacio entre imagen y título en vista móvil === */
+@media (max-width: 900px) {
+  .hero {
+    padding-top: 92px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .hero-image img,
+  .hero .image img,
+  .hero .media img,
+  .hero .photo img {
+    margin-bottom: -18px !important; /* sube un poco más la imagen */
+  }
+
+  .hero-text {
+    margin-top: -16px !important;    /* acerca el texto al borde inferior de la foto */
+  }
+}
