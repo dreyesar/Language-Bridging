@@ -703,7 +703,7 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   }
 }
 
-/* === Ajuste fino: espacio entre imagen y título en vista móvil === */
+/* === Pegamos el texto directamente a la foto (vista móvil) === */
 @media (max-width: 900px) {
   .hero {
     padding-top: 92px !important;
@@ -714,10 +714,10 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   .hero .image img,
   .hero .media img,
   .hero .photo img {
-    margin-bottom: -18px !important; /* sube un poco más la imagen */
+    margin-bottom: 0 !important; /* sin espacio debajo de la imagen */
   }
 
   .hero-text {
-    margin-top: -16px !important;    /* acerca el texto al borde inferior de la foto */
+    margin-top: -28px !important; /* sube el texto hasta tocar la imagen */
   }
 }
