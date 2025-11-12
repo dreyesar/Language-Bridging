@@ -721,3 +721,25 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
     margin-top: -28px !important; /* sube el texto hasta tocar la imagen */
   }
 }
+
+/* === Ajuste fino del logo en la barra === */
+.navbar .logo img {
+  position: relative;
+  top: 3px; /* baja el logo ligeramente */
+}
+
+/* === Ajuste espaciado de Contacto y Agenda === */
+.section.contact,
+.section.agenda {
+  padding-top: 4px !important;   /* antes 90px */
+  padding-bottom: 4px !important; /* mantiene algo de aire abajo */
+}
+
+.section.contact h1,
+.section.agenda h1 {
+  margin-bottom: 20px !important; /* reduce espacio entre título y contenido */
+}
+
+.contact .contact-form {
+  margin-top: 10px !important; /* acerca el formulario al título */
+}
