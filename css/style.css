@@ -124,7 +124,7 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
 
 /* Interior pages hero (simple) */
 .hero.interior .hero-content { display: block; text-align: center; }
-.hero.interior .hero-content h1 { font-size: 40px; }
+.hero.interior .hero-content h1 { font-size: 30px; }
 .hero.interior .hero-content p { margin-top: 6px; }
 
 /* Responsive */
