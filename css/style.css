@@ -152,7 +152,7 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   object-fit: cover;
-  margin-top: 70px; /* baja la foto ligeramente */
+  margin-top: 0px;
 }
 
 .about-text {
@@ -742,4 +742,36 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
 
 .contact .contact-form {
   margin-top: 10px !important; /* acerca el formulario al título */
+}
+
+/* Ajuste global de espacio entre hero y secciones */
+.section {
+  padding: 10px 0 !important;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start !important;
+}
+
+/* ======== FIX: alinear imágenes y texto en todas las secciones About ======== */
+
+/* Alinea foto y texto siempre al inicio vertical */
+.about-row,
+.about-row.reverse {
+  align-items: flex-start !important;
+}
+
+/* Elimina cualquier salto que empuje la imagen hacia abajo */
+.about-subphoto img {
+  margin-top: 0 !important;
+}
+/* Reducir espacio debajo de los títulos del About */
+.section.about h3 {
+  margin-bottom: 10px !important;
+}
+
+/* Reducir espacio debajo del subtítulo h4 por si aparece */
+.section.about h4 {
+  margin-bottom: 8px !important;
 }
