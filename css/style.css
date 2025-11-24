@@ -744,34 +744,122 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   margin-top: 10px !important; /* acerca el formulario al título */
 }
 
-/* Ajuste global de espacio entre hero y secciones */
+/* Ajuste global de espacio entre hero y secciones
 .section {
   padding: 10px 0 !important;
 }
+*/
 
 .about-container {
   display: flex;
   align-items: flex-start !important;
 }
 
-/* ======== FIX: alinear imágenes y texto en todas las secciones About ======== */
-
-/* Alinea foto y texto siempre al inicio vertical */
-.about-row,
-.about-row.reverse {
+/* === FIX DEFINITIVO ABOUT – Fuerza alineación correcta sin romper nada === */
+.section.about .about-container {
+  display: flex !important;
   align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 40px !important;
+  flex-wrap: nowrap !important;
 }
 
-/* Elimina cualquier salto que empuje la imagen hacia abajo */
-.about-subphoto img {
+.section.about .about-image img {
+  width: 360px !important;
   margin-top: 0 !important;
 }
-/* Reducir espacio debajo de los títulos del About */
-.section.about h3 {
-  margin-bottom: 10px !important;
+
+.section.about .about-text {
+  flex: 1 !important;
+  margin-top: 0 !important;
+}
+/* === FIX FINAL: alinear imagen y texto en el ABOUT === */
+.section.about .container.about-container {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 40px !important;
 }
 
-/* Reducir espacio debajo del subtítulo h4 por si aparece */
-.section.about h4 {
-  margin-bottom: 8px !important;
+.section.about .container.about-container .about-image img {
+    margin-top: 0 !important;
+}
+
+.section.about .container.about-container .about-text {
+    margin-top: 0 !important;
+}
+.contact-banner-img {
+    width: 75%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.contact-banner {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 60px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.contact-banner img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.service-banner {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 60px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.service-banner img {
+    width: 100%;
+    height: 320px; 
+    object-fit: cover;
+    object-position: 50% 15%;
+    display: block;
+}
+
+.service-banner3 {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 60px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.service-banner3 img {
+    width: 100%;
+    height: 320px; 
+    object-fit: cover;
+    object-position: 50% 60%;
+    display: block;
+}
+
+.service-banner1 {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 60px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.service-banner1 img {
+    width: 100%;
+    height: 320px; 
+    object-fit: cover;
+    object-position: 90%;
+    display: block;
 }
