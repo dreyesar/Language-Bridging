@@ -878,3 +878,50 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
+
+/* === ACA EMPIEZA EL MENU DESPLEGABLE === */
+
+/* Para que el contenedor del li pueda posicionar el dropdown */
+.nav-links li {
+  position: relative;
+}
+
+/* Estilo del submenú */
+.nav-links .dropdown {
+  position: absolute;
+  top: 100%;        /* justo debajo del enlace "Servicios" */
+  left: 0;
+  min-width: 220px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  padding: 8px 0;
+  list-style: none;
+  display: none;    /* oculto por defecto */
+  z-index: 2000;
+}
+
+/* Ítems dentro del dropdown */
+.nav-links .dropdown li a {
+  display: block;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #333;
+  white-space: nowrap;
+}
+
+.nav-links .dropdown li a:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+/* Mostrar el dropdown al pasar el mouse (desktop) */
+.nav-links .has-dropdown:hover > .dropdown {
+  display: block;
+}
+
+/* Iconito del chevron */
+.has-dropdown > a i {
+  font-size: 0.75rem;
+  margin-left: 6px;
+}
