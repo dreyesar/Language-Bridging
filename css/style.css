@@ -3,8 +3,8 @@
    LANGUAGE BRIDGING – STYLE.CSS
    =============================== */
 :root {
-  /*--gold: #F1C40F;*/
-  --gold: #FFCC00; /* Nat Geo Yellow */
+  --gold: #F1C40F;/* Amarillo oficial del logo */
+  /* --gold: #FFCC00; Nat Geo Yellow */
   --black: #000000;
   --gray: #f7f7f7;
   --text: #222222;
@@ -924,4 +924,73 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
 .has-dropdown > a i {
   font-size: 0.75rem;
   margin-left: 6px;
+}
+
+.title-glow {
+  color: var(--gold);
+  text-shadow: 0 0 8px rgba(241, 196, 15, 0.45);
+}
+
+
+
+
+
+/* Tarjetas con sombra azul oscuro */
+.service-card {
+  flex: 1 1 320px;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: transform .3s, box-shadow .3s;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Nueva sombra azul */
+  box-shadow: 0 4px 14px rgba(12, 35, 63, 0.25);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+
+  /* Sombra más profunda al pasar el mouse */
+  box-shadow: 0 10px 22px rgba(12, 35, 63, 0.35);
+}
+
+
+/* Testimonios */
+.section-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-weight: 300;
+  color: #555;
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.testimonio-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.testimonio-texto {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.testimonio-autor {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
 }
