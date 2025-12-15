@@ -881,15 +881,13 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
 
 /* === ACA EMPIEZA EL MENU DESPLEGABLE === */
 
-/* Para que el contenedor del li pueda posicionar el dropdown */
 .nav-links li {
   position: relative;
 }
 
-/* Estilo del submenú */
 .nav-links .dropdown {
   position: absolute;
-  top: 100%;        /* justo debajo del enlace "Servicios" */
+  top: 100%;        
   left: 0;
   min-width: 220px;
   background: rgba(255, 255, 255, 0.98);
@@ -897,11 +895,10 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   border-radius: 8px;
   padding: 8px 0;
   list-style: none;
-  display: none;    /* oculto por defecto */
+  display: none;    
   z-index: 2000;
 }
 
-/* Ítems dentro del dropdown */
 .nav-links .dropdown li a {
   display: block;
   padding: 8px 16px;
@@ -915,12 +912,10 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   background: rgba(0,0,0,0.05);
 }
 
-/* Mostrar el dropdown al pasar el mouse (desktop) */
 .nav-links .has-dropdown:hover > .dropdown {
   display: block;
 }
 
-/* Iconito del chevron */
 .has-dropdown > a i {
   font-size: 0.75rem;
   margin-left: 6px;
@@ -931,7 +926,7 @@ html, body { font-family: var(--font-body); color: var(--text); background: #fff
   text-shadow: 0 0 8px rgba(241, 196, 15, 0.45);
 }
 
-
+/* === ACA TERMINA EL MENU DESPLEGABLE === */
 
 
 
