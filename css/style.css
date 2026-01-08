@@ -142,8 +142,14 @@ body {
 
 /* Sections */
 .section {
-  padding: 90px 0;
+  padding: 10px 0;
 }
+
+.service-page .section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 
 .section h2 {
   font-family: var(--font-title);
@@ -1148,18 +1154,17 @@ body {
 
 .service-banner3 {
   width: 100%;
-  max-width: 800px;
-  margin: 40px auto 60px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
 }
 
 .service-banner3 img {
   width: 100%;
-  height: 320px;
-  object-fit: cover;
-  object-position: 50% 60%;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
@@ -1327,7 +1332,7 @@ body {
 
 .agradecimientos-carousel .testimonio-card {
   flex: 0 0 100%;
-  background: #2f363d;
+  background: #5a6169;
   color: #fff;
   padding: 28px 26px;
   border-radius: 16px;
@@ -1351,9 +1356,9 @@ body {
 /* Flechas */
 .carousel-btn {
   position: absolute;
-  top: 0;
+  top: 50%;
   /* lo setea el JS con px */
-  transform: none;
+  transform: translateY(-50%);;
   /* evita pelear con el JS */
   z-index: 10;
 
@@ -1380,7 +1385,7 @@ body {
 }
 
 .carousel-btn:hover {
-  transform: scale(1.08);
+  transform: translateY(-50%) scale(1.05);
 }
 
 .carousel-btn:disabled {
@@ -1391,7 +1396,8 @@ body {
 
 /* Estrellas rojas (rating) */
 .testimonio-rating {
-  margin-top: 16px;
+  margin-top: 0;
+  margin-bottom: 14px;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -1439,5 +1445,81 @@ body {
 }
 
 #agradecimientos h2 {
-  margin-top: 0;
+  margin-top: 20px;
 }
+
+/* === FIX: igualar <button> y <a> con clase .btn.gold === */
+button.btn.gold {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: var(--gold);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.btn.gold:hover {
+  background-color: #E6B800;
+  transform: translateY(-2px);
+}
+
+/* === Banner Service 4 (igual que Service 3) === */
+.service-banner4 {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;     /* menos aire */
+  border-radius: 0;      /* sin bordes redondeados */
+  overflow: visible;     /* no recorta */
+  box-shadow: none;      /* sin efecto tarjeta */
+}
+
+.service-banner4 img {
+  width: 100%;
+  height: auto;          /* no recorta */
+  display: block;        /* sin gap fantasma */
+  object-fit: contain;   /* por si algún navegador intenta recortar */
+}
+
+/* Ajuste de tamaño para títulos internos en Fundamentos */
+.fundamentals-page h2 {
+  font-size: 28px;
+}
+
+/* === RESET GLOBAL: imágenes sin bordes redondeados === */
+img {
+  border-radius: 0 !important;
+}
+/* === RESET TOTAL de bordes redondeados en contenedores de imágenes === */
+
+/* Services */
+.service-card,
+.service-box,
+.service-banner,
+.service-image,
+.service-hero,
+.service-cover,
+.service-banner1,
+.service-banner2,
+.service-banner3,
+.service-banner4,
+.service-banner5,
+
+/* Contact */
+.contact-image,
+.contact-banner,
+.contact-card,
+
+/* About / others */
+.about-image,
+.hero-image,
+.quote-image {
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+

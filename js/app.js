@@ -140,7 +140,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const hiddenContent = document.getElementById("hiddenContent");
 
   if (toggleBtn && hiddenContent) {
-    toggleBtn.addEventListener("click", function () {
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault();
 
       const isHidden = hiddenContent.style.display === "none" || hiddenContent.style.display === "";
 
