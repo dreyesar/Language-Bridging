@@ -391,7 +391,8 @@ body {
   color: #F1C40F;
   font-family: 'Playfair Display', serif;
   font-size: 24px;
-  margin: 24px 0 10px;
+  margin-top: 0 !important;
+  /* clave: sube el título y alinea con la imagen */
 }
 
 .about-text p {
@@ -408,9 +409,21 @@ body {
     text-align: left;
   }
 
+  /* asegura que la columna de la imagen se pegue arriba */
+  .about-image {
+    align-self: flex-start;
+  }
+
+  /* imagen bien alineada + sin bordes redondeados */
   .about-image img {
+    display: block;
+    /* evita el “baseline” que genera saltitos */
     width: 100%;
     max-width: 420px;
+    /* ajustá si querés */
+    height: auto;
+    border-radius: 0 !important;
+    /* pisa tu inline border-radius:16px */
   }
 
   .about-text {
@@ -1358,7 +1371,8 @@ body {
   position: absolute;
   top: 50%;
   /* lo setea el JS con px */
-  transform: translateY(-50%);;
+  transform: translateY(-50%);
+  ;
   /* evita pelear con el JS */
   z-index: 10;
 
@@ -1473,17 +1487,24 @@ button.btn.gold:hover {
 .service-banner4 {
   width: 100%;
   max-width: 900px;
-  margin: 20px auto;     /* menos aire */
-  border-radius: 0;      /* sin bordes redondeados */
-  overflow: visible;     /* no recorta */
-  box-shadow: none;      /* sin efecto tarjeta */
+  margin: 20px auto;
+  /* menos aire */
+  border-radius: 0;
+  /* sin bordes redondeados */
+  overflow: visible;
+  /* no recorta */
+  box-shadow: none;
+  /* sin efecto tarjeta */
 }
 
 .service-banner4 img {
   width: 100%;
-  height: auto;          /* no recorta */
-  display: block;        /* sin gap fantasma */
-  object-fit: contain;   /* por si algún navegador intenta recortar */
+  height: auto;
+  /* no recorta */
+  display: block;
+  /* sin gap fantasma */
+  object-fit: contain;
+  /* por si algún navegador intenta recortar */
 }
 
 /* Ajuste de tamaño para títulos internos en Fundamentos */
@@ -1495,6 +1516,7 @@ button.btn.gold:hover {
 img {
   border-radius: 0 !important;
 }
+
 /* === RESET TOTAL de bordes redondeados en contenedores de imágenes === */
 
 /* Services */
@@ -1523,3 +1545,57 @@ img {
   overflow: visible !important;
 }
 
+/* === BANNER INTERNO UNIFICADO (services, agradecimientos, contact, etc.) === */
+.page-banner {
+  width: 100%;
+  max-width: 900px;
+  /* MISMO ancho que el texto */
+  margin: 20px auto 40px;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+}
+
+.page-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  /* NUNCA corta */
+}
+
+/* ABOUT - Bloque 2: alinear la foto con el INICIO del texto (primer párrafo) */
+.about-block2 .about-image{
+  margin-top: 56px;           /* ajusta el arranque al nivel del párrafo */
+  align-self: flex-start;
+}
+
+.about-block2 .about-image img{
+  display: block;
+}
+
+/* ABOUT – Bloque "Qué me distingue" alineado al TEXTO */
+.about-grid{
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  column-gap: 40px;
+  align-items: start;
+}
+
+/* texto */
+.about-grid .about-text{
+  grid-column: 1;
+}
+
+/* imagen alineada al primer párrafo */
+.about-grid .about-image{
+  grid-column: 2;
+  margin-top: calc(1.2em + 24px); /* altura real del h3 + separación */
+}
+
+.about-grid .about-image img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0 !important;
+}
