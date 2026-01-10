@@ -161,4 +161,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // ===============================
+  // BASIC CONTENT PROTECTION (DISUASIVE)
+  // ===============================
+  const isEditable = (el) => {
+    if (!el) return false;
+    const tag = (el.tagName || "").toLowerCase();
+    return tag === "input" || tag === "textarea" || el.isContentEditable;
+  };
+
+  document.addEventListener("contextmenu", function (e) {
+    if (isEditable(e.target)) return;
+    e.preventDefault();
+  });
+
+  document.addEventListener("copy", function (e) {
+    if (isEditable(e.target)) return;
+    e.preventDefault();
+  });
+
+  document.addEventListener("selectstart", function (e) {
+    if (isEditable(e.target)) return;
+    e.preventDefault();
+  });
+
 });
