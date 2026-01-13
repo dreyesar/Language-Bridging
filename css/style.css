@@ -1602,3 +1602,26 @@ img {
   border-radius: 0 !important;
 }
 
+/* === Banner Service 44 (igual que Service 4) === */
+.service-banner44 {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  /* menos aire */
+  border-radius: 0;
+  /* sin bordes redondeados */
+  overflow: visible;
+  /* no recorta */
+  box-shadow: none;
+  /* sin efecto tarjeta */
+}
+
+.service-banner44 img {
+  width: 100%;
+  height: auto;
+  /* no recorta */
+  display: block;
+  /* sin gap fantasma */
+  object-fit: contain;
+  /* por si algún navegador intenta recortar */
+}
