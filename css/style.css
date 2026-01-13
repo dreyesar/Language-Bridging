@@ -1310,6 +1310,7 @@ body {
 }
 
 .testimonio-texto {
+   font-family: 'Merriweather', serif;
   font-style: italic;
   color: #333;
   margin-bottom: 15px;
