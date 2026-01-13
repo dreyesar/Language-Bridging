@@ -1603,25 +1603,16 @@ img {
 }
 
 /* === Banner Service 44 (igual que Service 4) === */
-.service-banner44 {
-  width: 80%;
-  max-width: 900px;
-  margin: 20px auto;
-  /* menos aire */
-  border-radius: 0;
-  /* sin bordes redondeados */
-  overflow: visible;
-  /* no recorta */
-  box-shadow: none;
-  /* sin efecto tarjeta */
+/* === FIX DEFINITIVO: imágenes del contenido oculto (Service 4) === */
+#hiddenContent .service-banner44{
+  width: 100% !important;
+  max-width: 520px !important;   /* ajustá 480–600 si querés */
+  margin: 24px auto 32px !important;
 }
 
-.service-banner44 img {
-  width: 100%;
-  height: auto;
-  /* no recorta */
-  display: block;
-  /* sin gap fantasma */
-  object-fit: contain;
-  /* por si algún navegador intenta recortar */
+#hiddenContent .service-banner44 img{
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
 }
