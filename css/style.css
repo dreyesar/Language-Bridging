@@ -1131,22 +1131,23 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* === CONTACTO – Banner SIN recorte (imagen completa) === */
-.contact-banner {
+/* Contact - banner alineado al ancho del formulario y SIN recorte */
+.contact-banner{
   width: 100%;
-  max-width: 900px;     /* mismo ancho que el texto */
-  margin: 30px auto 50px;
-  border-radius: 0;     /* coherente con el resto del sitio */
-  overflow: visible;   /* NUNCA cortar */
-  box-shadow: none;    /* sin efecto tarjeta */
+  max-width: 790px;     /* igual a .container.narrow */
+  margin: 20px auto 20px;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
 }
 
-.contact-banner img {
+.contact-banner img{
   width: 100%;
-  height: auto;        /* clave */
+  height: auto;         /* clave: no fuerza altura */
   display: block;
-  object-fit: contain; /* nunca recorta */
+  object-fit: contain;  /* clave: nunca corta */
 }
+
 
 .service-banner {
   width: 100%;
@@ -1310,7 +1311,7 @@ body {
 }
 
 .testimonio-texto {
-   font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
   font-style: italic;
   color: #333;
   margin-bottom: 15px;
@@ -1600,3 +1601,4 @@ img {
   height: auto;
   border-radius: 0 !important;
 }
+
