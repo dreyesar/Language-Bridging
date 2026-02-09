@@ -1132,20 +1132,23 @@ body {
 }
 
 /* Contact - banner alineado al ancho del formulario y SIN recorte */
-.contact-banner{
+.contact-banner {
   width: 100%;
-  max-width: 790px;     /* igual a .container.narrow */
+  max-width: 790px;
+  /* igual a .container.narrow */
   margin: 20px auto 20px;
   border-radius: 0;
   overflow: visible;
   box-shadow: none;
 }
 
-.contact-banner img{
+.contact-banner img {
   width: 100%;
-  height: auto;         /* clave: no fuerza altura */
+  height: auto;
+  /* clave: no fuerza altura */
   display: block;
-  object-fit: contain;  /* clave: nunca corta */
+  object-fit: contain;
+  /* clave: nunca corta */
 }
 
 
@@ -1567,17 +1570,18 @@ img {
 }
 
 /* ABOUT - Bloque 2: alinear la foto con el INICIO del texto (primer párrafo) */
-.about-block2 .about-image{
-  margin-top: 56px;           /* ajusta el arranque al nivel del párrafo */
+.about-block2 .about-image {
+  margin-top: 56px;
+  /* ajusta el arranque al nivel del párrafo */
   align-self: flex-start;
 }
 
-.about-block2 .about-image img{
+.about-block2 .about-image img {
   display: block;
 }
 
 /* ABOUT – Bloque "Qué me distingue" alineado al TEXTO */
-.about-grid{
+.about-grid {
   display: grid;
   grid-template-columns: 1fr 420px;
   column-gap: 40px;
@@ -1585,17 +1589,18 @@ img {
 }
 
 /* texto */
-.about-grid .about-text{
+.about-grid .about-text {
   grid-column: 1;
 }
 
 /* imagen alineada al primer párrafo */
-.about-grid .about-image{
+.about-grid .about-image {
   grid-column: 2;
-  margin-top: calc(1.2em + 24px); /* altura real del h3 + separación */
+  margin-top: calc(1.2em + 24px);
+  /* altura real del h3 + separación */
 }
 
-.about-grid .about-image img{
+.about-grid .about-image img {
   display: block;
   width: 100%;
   height: auto;
@@ -1604,15 +1609,54 @@ img {
 
 /* === Banner Service 44 (igual que Service 4) === */
 /* === FIX DEFINITIVO: imágenes del contenido oculto (Service 4) === */
-#hiddenContent .service-banner44{
+#hiddenContent .service-banner44 {
   width: 100% !important;
-  max-width: 520px !important;   /* ajustá 480–600 si querés */
+  max-width: 520px !important;
+  /* ajustá 480–600 si querés */
   margin: 24px auto 32px !important;
 }
 
-#hiddenContent .service-banner44 img{
+#hiddenContent .service-banner44 img {
   width: 100% !important;
   height: auto !important;
   display: block !important;
   object-fit: contain !important;
+}
+
+/* === BOTÓN VOLVER ARRIBA – CENTRO REAL DE PANTALLA === */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+
+  left: 50vw;
+  /* centro del viewport */
+  transform: translateX(-50%);
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  z-index: 1001;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* hover SIN transform (clave) */
+#backToTop:hover {
+  background-color: #F1C40F;
+  color: #000;
+}
+
+/* espacio de seguridad cuando estamos cerca del footer */
+body.footer-visible #backToTop {
+  bottom: 130px;
 }

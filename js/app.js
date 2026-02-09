@@ -185,4 +185,39 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
   });
 
+  // ===============================
+  // BOTÓN "VOLVER ARRIBA"
+  // ===============================
+  const backToTopBtn = document.getElementById("backToTop");
+
+  if (backToTopBtn) {
+    window.addEventListener("scroll", () => {
+      backToTopBtn.style.display = (window.scrollY > 400) ? "flex" : "none";
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+  // === Detectar footer para no tapar contenido ===
+  const footer = document.querySelector("footer");
+
+  if (footer && backToTopBtn) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            document.body.classList.add("footer-visible");
+          } else {
+            document.body.classList.remove("footer-visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(footer);
+  }
+
+
 });
