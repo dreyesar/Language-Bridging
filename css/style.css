@@ -1660,3 +1660,31 @@ img {
 body.footer-visible #backToTop {
   bottom: 130px;
 }
+
+/*titulo metodologia en service4.html*/
+.method-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;        /* más grande */
+  color: #F1C40F;
+  text-align: left !important;
+  margin-bottom: 20px;
+}
+
+/*Marca de agua dinámica?
+body::before {
+  content: "Language Bridging® - Uso exclusivo";
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-25deg);
+  
+  font-size: 80px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.05);
+
+  pointer-events: none;
+  z-index: 9999;
+}
+*/
