@@ -1491,13 +1491,13 @@ button.btn.gold:hover {
 /* === Banner Service 4 (igual que Service 3) === */
 .service-banner4 {
   width: 100%;
-  max-width: 900px;
-  margin: 20px auto;
-  /* menos aire */
+  max-width: 650px;
+  margin: 30px auto 40px;
+  /* menos aire 
   border-radius: 0;
-  /* sin bordes redondeados */
+  /* sin bordes redondeados 
   overflow: visible;
-  /* no recorta */
+  /* no recorta 
   box-shadow: none;
   /* sin efecto tarjeta */
 }
