@@ -1512,6 +1512,21 @@ button.btn.gold:hover {
   /* por si algún navegador intenta recortar */
 }
 
+.service-banner34 {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto 0px;
+}
+.service-banner34 img {
+  width: 100%;
+  height: auto;
+  /* no recorta */
+  display: block;
+  /* sin gap fantasma */
+  object-fit: contain;
+  /* por si algún navegador intenta recortar */
+}
+
 /* Ajuste de tamaño para títulos internos en Fundamentos */
 .fundamentals-page h2 {
   font-size: 28px;
@@ -1688,3 +1703,6 @@ body::before {
   z-index: 9999;
 }
 */
+.impact-list {
+    text-align: justify;
+}
