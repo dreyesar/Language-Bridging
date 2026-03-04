@@ -1706,3 +1706,22 @@ body::before {
 .impact-list {
     text-align: justify;
 }
+
+/*Efecto Lupa sobre las fotos*/
+/* --- ZOOM EN ABOUT (hover) --- */
+.about-image{
+  overflow: hidden;          /* recorta lo que se agranda */
+  border-radius: 16px;       /* para que el recorte sea prolijo */
+}
+
+.about-image img{
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .4s ease;
+  transform-origin: center;
+}
+
+.about-image:hover img{
+  transform: scale(1.15);    /* ajustá 1.10 a 1.35 según gusto */
+}
