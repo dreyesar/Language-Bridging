@@ -1707,11 +1707,11 @@ body::before {
     text-align: justify;
 }
 
-/*Efecto Lupa sobre las fotos*/
-/* --- ZOOM EN ABOUT (hover) --- */
+/*Efecto Lupa sobre las fotos
+/* --- ZOOM EN ABOUT (hover) --- 
 .about-image{
-  overflow: hidden;          /* recorta lo que se agranda */
-  border-radius: 16px;       /* para que el recorte sea prolijo */
+  overflow: hidden;          /* recorta lo que se agranda 
+  border-radius: 16px;       /* para que el recorte sea prolijo 
 }
 
 .about-image img{
@@ -1723,5 +1723,5 @@ body::before {
 }
 
 .about-image:hover img{
-  transform: scale(1.15);    /* ajustá 1.10 a 1.35 según gusto */
-}
+  transform: scale(1.15);    /* ajustá 1.10 a 1.35 según gusto 
+}*/
