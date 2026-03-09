@@ -1742,3 +1742,7 @@ body::before {
 .impact-list li p {
   margin-top: 10px;
 }
+
+h3 {
+  font-family: 'Playfair Display', serif;
+}
