@@ -1725,3 +1725,20 @@ body::before {
 .about-image:hover img{
   transform: scale(1.15);    /* ajustá 1.10 a 1.35 según gusto 
 }*/
+
+.impact-list {
+  text-align: justify;
+  padding-left: 24px;
+}
+
+.impact-list li {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.impact-list li p {
+  margin-top: 10px;
+}
