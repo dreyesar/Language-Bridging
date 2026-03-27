@@ -1750,3 +1750,14 @@ body::before {
 h3 {
   font-family: 'Playfair Display', serif;
 }
+
+.socials a i.fa-linkedin {
+  color: #0077B5;   /* azul oficial LinkedIn */
+  font-size: 26px;  /* más grande */
+  transition: all 0.3s ease;
+}
+
+.socials a i.fa-linkedin:hover {
+  color: #005582;   /* azul más oscuro al hover */
+  transform: scale(1.15);
+}
