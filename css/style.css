@@ -57,7 +57,11 @@ body {
   height: 90px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  max-width: 1400px;
+  padding-left: 0;
+  padding-right: 90px;
 }
 
 .logo img {
@@ -498,7 +502,7 @@ body {
 /* Logo fijo a la izquierda */
 .navbar .logo {
   position: absolute;
-  left: 20px;
+  left: 8px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -553,7 +557,7 @@ body {
 /* Logo fijo a la izquierda */
 .navbar .logo {
   position: absolute;
-  left: 20px;
+  left: 8px;
   top: 50%;
   transform: translateY(-50%);
 }
