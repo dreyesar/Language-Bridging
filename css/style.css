@@ -546,12 +546,19 @@ body {
   }
 }
 
-/* === Centrado del menú de navegación (estilo profesional) === */
+/* === Centrado del menú de navegación (estilo profesional) === 
 .navbar .container {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}*/
+
+/* === Alineado a la derecha del menú de navegación (estilo profesional) === */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* clave */
 }
 
 /* Logo fijo a la izquierda */
@@ -1760,4 +1767,8 @@ h3 {
 .socials a i.fa-linkedin:hover {
   color: #005582;   /* azul más oscuro al hover */
   transform: scale(1.15);
+}
+
+.nav-links {
+  margin-left: auto;
 }
