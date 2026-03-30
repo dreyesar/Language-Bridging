@@ -1772,3 +1772,28 @@ h3 {
 .nav-links {
   margin-left: auto;
 }
+
+.about-third-block {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+  gap: 40px !important;
+}
+
+.about-third-block .about-image {
+  flex: 0 0 360px !important;
+  margin-top: 0 !important;
+}
+
+.about-third-block .about-image img {
+  width: 360px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+.about-third-block .about-text {
+  flex: 1 !important;
+  margin-top: 0 !important;
+}
